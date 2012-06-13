@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Detecting HuluWithMe plugin...</title>
+    <style>
+      body {
+        min-height: 300px;
+        background-repeat: no-repeat;
+        background-color: #2B2B2B;
+        margin: 50px;
+        text-size: 12px;
+        font-family: verdana;
+        background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.42, #2B2B2B),
+        color-stop(0.71, #1C1C1C)
+        );
+        background-image: -moz-linear-gradient(
+        center bottom,
+        #2B2B2B 42%,
+        #1C1C1C 71%
+        );
+      }
+
+      .detecting {
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 10px 10px 10px 10px;
+        color: #777777;
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+        width: 300px;
+        margin: auto;
+      }
+
+      .detecting strong{
+        color: #fff;
+      }
+
+      .detecting strong span {
+        color: #9DC83A;
+      }
+
+      .dots {
+        padding-top: 10px;
+      }
+
+      .dots span {
+        width: 10px;
+        height: 10px;
+        background-color: #666;
+        border-radius: 10px;
+        margin: 3px;
+        display: inline-block;
+      }
+
+      .dots span.on {
+        -moz-transition: background-color 0.3s linear;
+        background-color: #CCC;
+      }
+      body {
+        min-height: 300px;
+        background-repeat: no-repeat;
+        background-color: #2B2B2B;
+        margin: 50px;
+        text-size: 12px;
+        font-family: verdana;
+        background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.42, #2B2B2B),
+        color-stop(0.71, #1C1C1C)
+        );
+        background-image: -moz-linear-gradient(
+        center bottom,
+        #2B2B2B 42%,
+        #1C1C1C 71%
+        );
+      }
+
+      h1 {
+        color: #FFFFFF;
+        font-size: 50px;
+        text-align: center;
+        text-shadow: 2px 2px 0 #000000, 0 0 10px #666666;
+        font-weight: normal;
+      }
+
+      .hulu {
+        color: #96C738;
+      }
+
+      p {
+        color: #AAAAAA;
+        font-size: 15px;
+        margin: auto;
+        text-align: center;
+        width: 500px;
+        text-shadow: 1px 1px 0 #000;
+      }
+
+      #download {
+        -webkit-transition: box-shadow 0.2s ease-in-out 0s;
+        -moz-transition: box-shadow 0.2s ease-in-out 0s;
+        background: -webkit-linear-gradient(top , #84C63C 0%, #489615 100%) repeat scroll 0 0 transparent;
+        background: -moz-linear-gradient(center top , #84C63C 0%, #489615 100%) repeat scroll 0 0 transparent;
+        border-radius: 6px 6px 6px 6px;
+        box-shadow: 0 3px rgba(0, 0, 0, 0.1), 0 -4px rgba(0, 0, 0, 0.1) inset;
+        color: #FFFFFF;
+        display: block;
+        font-size: 26px;
+        font-weight: bold;
+        height: 46px;
+        line-height: 38px;
+        margin: auto;
+        margin-top: 30px;
+        overflow: visible;
+        text-align: center;
+        text-shadow: -1px -1px rgba(0, 0, 0, 0.2);
+        width: 300px;
+        border: 0;
+        text-decoration: none;
+      }
+
+      #download:hover {
+        -moz-transition: box-shadow 0.2s ease-in-out 0s;
+        -webkit-transition: box-shadow 0.2s ease-in-out 0s;
+        box-shadow: 0 3px rgba(0, 0, 0, 0.15), 0 -4px rgba(0, 0, 0, 0.15) inset, 0 0 80px rgba(0, 0, 0, 0.3) inset;
+      }
+
+      div.cap {
+        color: #AAAAAA;
+        display: block;
+        font-size: 13px;
+        padding-top: 5px;
+        text-align: center;
+      }
+
+      em.beta {
+        color: #D02020;
+      }
+
+#install { display: none; }
+    </style>
+    <script type="text/javascript" src="http://use.typekit.com/man3jvj.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <script>
+      window.onload = function(){
+        var spans = document.getElementsByTagName('span');
+
+        var i = 0;
+        function lightUp() {
+          if(i >= spans.length) {
+            i = 0;
+            for(var c = 0; c < spans.length; c++) {
+              spans[c].className = "";
+            }
+          }
+          spans[i].className = "on";
+          i++;
+        }
+
+        setInterval(lightUp, 50);
+
+        setTimeout(function() {
+            document.getElementById('install').style.display = 'block';
+            document.getElementById('detecting_hwm').style.display = 'none';
+            document.getElementsByTagName('title')[0].text = 'Install HuluWithMe!';
+        }, 1000);
+      };
+    </script>
+  </head>
+
+  <body id="installing_hwm">
+<div id="install">
+    <h1><strong class="hulu">hulu</strong>withme</h1>
+
+    <p>
+      <strong>Hulu</strong>withme is a browser plugin that lets you watch Hulu simultaneously across multiple computers.
+      Since it's currently in <em class="beta">beta</em>, it only works in Firefox 4 right now.  A Chrome version is coming soon.
+    </p>
+
+    <a href="#" id="download" class="tk-ff-meta-web-pro">Install Hulu With Me</a>
+    <div class="cap">No browser restart required.</div>
+</div>
+    <div id="detecting_hwm" class="detecting">
+      Detecting the <strong><span>hulu</span> with me</strong> plugin&hellip;
+      <div class="dots">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
