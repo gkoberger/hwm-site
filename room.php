@@ -209,14 +209,7 @@
       <h1><strong class="hulu">hulu</strong>withme</h1>
       <p>Don't let distance keep you from watching your favorite shows with your favorite people. <strong>Huluwithme</strong> keeps your video in sync across
         multiple computers, so you can chat and watch together. It is currently in <em class="beta">beta</em>, so there may be bugs!</p>
-
-      <a href="#" id="install" class="tk-ff-meta-web-pro">Install <strong>hulu</strong>withme</a>
-      <div id="unsupported">
-        <a href="http://firefox.com" target="_blank"><img src="/img/firefox.png"></a>
-        <a href="http://google.com/chrome" target="_blank"><img src="/img/chrome.png"></a>
-        <strong>Only available for Firefox 4+ and Chrome 18+</strong>
-      </div>
-      <div class="cap">No browser restart required.</div>
+    <? include "button.php"; ?>
 
     </div>
     <div id="detecting_hwm" class="detecting">

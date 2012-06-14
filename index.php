@@ -26,12 +26,7 @@
         <div id="header-content">
           <p class="meta">Don't let distance keep you from watching your favorite shows with your favorite people.
             <strong>Hulu</strong>withme keeps your video in sync across multiple computers, so you can chat and watch together.</p>
-          <a href="#" id="install">Get Started!</a>
-          <div id="unsupported">
-            <a href="http://firefox.com" target="_blank"><img src="img/firefox.png"></a>
-            <a href="http://google.com/chrome" target="_blank"><img src="img/chrome.png"></a>
-            <strong>Only available for Firefox 4+ and Chrome 18+</strong>
-          </div>
+            <? include "button.php"; ?>
         </div>
         <img src="img/kids.png" id="kids">
       </header>
