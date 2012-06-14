@@ -5,10 +5,10 @@ $(function() {
             $(this).addClass('disabled').text('Installing...');
         });
     } else if (!!(window.chrome && chrome.webstore && chrome.webstore.install)) {
-        $('#install').click(function() {
+        $('#install')[0].onclick = function() {
             chrome.webstore.install();
             $(this).addClass('disabled').text('Installing...');
-        });
+        };
     } else {
         $('#unsupported').show();
         $('#install').addClass('disabled').click(function() {
