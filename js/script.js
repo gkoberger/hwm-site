@@ -4,7 +4,8 @@ $(function() {
         $('#install').click(function() {
             $(this).addClass('disabled').text('Installing...');
         });
-    } else if($.browser.webkit && /chrome/.test(navigator.userAgent.toLowerCase())) {
+    } else if (!!(window.chrome && chrome.webstore && chrome.webstore.install)) {
+        chrome.webstore.install();
     } else {
         $('#unsupported').show();
         $('#install').addClass('disabled').click(function() {
