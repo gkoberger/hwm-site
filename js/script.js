@@ -1,4 +1,9 @@
 $(function() {
+    installButton();
+    dots();
+});
+
+var installButton = function() {
     if($.browser.mozilla && parseInt($.browser.version) >= 4) {
         $('#install').attr('href', '/hwm.xpi');
         $('#install').click(function() {
@@ -15,28 +20,26 @@ $(function() {
             alert('You need to be using either Firefox 4+ or Chrome 18+');
         });
     }
-});
+};
 
-window.onload = function(){
-var spans = document.getElementsByTagName('span');
+var dots = function() {
+    var spans = $('#detecting_hwm .dots span');
 
-var i = 0;
-function lightUp() {
-  if(i >= spans.length) {
-    i = 0;
-    for(var c = 0; c < spans.length; c++) {
-      spans[c].className = "";
+    var i = 0;
+    function lightUp() {
+        if(i >= spans.length) {
+            i = 0;
+            spans.removeClass('on');
+        }
+        spans.eq(i).addClass('on');
+        i++;
     }
-  }
-  spans[i].className = "on";
-  i++;
-}
 
-setInterval(lightUp, 100);
+    setInterval(lightUp, 200);
 
-setTimeout(function() {
-    document.getElementById('install-page').style.display = 'block';
-    document.getElementById('detecting_hwm').style.display = 'none';
-    document.getElementsByTagName('title')[0].text = 'Install Huluwithme!';
-}, 1000);
+    setTimeout(function() {
+        $('#install-page').show();
+        $('#detecting_hwm').hide();
+        $('title').text('Install Huluwithme!');
+    }, 1000);
 };
