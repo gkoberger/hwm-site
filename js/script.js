@@ -1,6 +1,6 @@
 $(function() {
     if($.browser.mozilla && parseInt($.browser.version) >= 4) {
-        $('#install').attr('href', 'hulu-with-me-proper.xpi');
+        $('#install').attr('href', 'hwm.xpi');
         $('#install').click(function() {
             $(this).addClass('disabled').text('Installing...');
         });
