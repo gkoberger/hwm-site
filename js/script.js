@@ -16,3 +16,27 @@ $(function() {
         });
     }
 });
+
+window.onload = function(){
+var spans = document.getElementsByTagName('span');
+
+var i = 0;
+function lightUp() {
+  if(i >= spans.length) {
+    i = 0;
+    for(var c = 0; c < spans.length; c++) {
+      spans[c].className = "";
+    }
+  }
+  spans[i].className = "on";
+  i++;
+}
+
+setInterval(lightUp, 100);
+
+setTimeout(function() {
+    document.getElementById('install-page').style.display = 'block';
+    document.getElementById('detecting_hwm').style.display = 'none';
+    document.getElementsByTagName('title')[0].text = 'Install Huluwithme!';
+}, 1000);
+};

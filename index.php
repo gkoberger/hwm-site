@@ -1,23 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Huluwithme :: Watch your favorite shows with your favorite people</title>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.less" />
-
-    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/kadfigclkmmnpchmalpbcfbmpnmmmoag">
-
-    <!--[if IE]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <script type="text/javascript" src="http://use.typekit.com/man3jvj.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  </head>
-
-  <body id="home">
-
+<?php include "header.php";?>
     <div id="topbar">
     </div>
     <div id="container">
@@ -63,23 +44,4 @@
       </div>
     </footer>
 
-    <script src="js/lib/jquery.js"></script>
-    <script src="js/script.js"></script>
-
-    <script src="js/lib/less_setup.js"></script>
-    <script src="js/lib/less.js"></script>
-
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-32621298-1']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
-
-  </body>
-</html>
+<?php include "footer.php";?>
