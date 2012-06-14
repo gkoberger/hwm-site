@@ -1,4 +1,4 @@
 Options +FollowSymlinks
 RewriteEngine on
-RewriteRule ^i/([a-zA-Z0-9]*-[0-9]*)/?$ room.html [NC]
+RewriteRule ^i/([a-zA-Z0-9]*-[0-9]*)/?$ room.php [NC]
 
