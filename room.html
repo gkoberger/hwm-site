@@ -4,6 +4,29 @@
     <meta charset="utf-8" />
     <title>Detecting Huluwithme plugin...</title>
     <style>
+      /* Duplicated */
+      #unsupported {
+        display: none;
+        color: #FFFFFF;
+        position: relative;
+        text-align: center;
+        z-index: 10001;
+        margin-top: 1em;
+      }
+      #unsupported a:hover {
+        opacity: 0.8;
+      }
+      #unsupported a img {
+        margin-bottom: 3px;
+      }
+      #unsupported strong {
+        position: relative;
+        top: -12px;
+        margin-left: 5px;
+        font-weight: normal;
+      }
+
+
       body {
         min-height: 300px;
         background-repeat: no-repeat;
@@ -168,7 +191,7 @@
         setInterval(lightUp, 100);
 
         setTimeout(function() {
-            document.getElementById('install').style.display = 'block';
+            document.getElementById('install-page').style.display = 'block';
             document.getElementById('detecting_hwm').style.display = 'none';
             document.getElementsByTagName('title')[0].text = 'Install Huluwithme!';
         }, 1000);
