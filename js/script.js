@@ -39,7 +39,7 @@ var installButton = function() {
 
 var installSuccess = function() {
     alert("it worked!");
-    $('#install').removeClass('disabled').text('Installed!');
+    $('#install').text('Installed!');
     $('#restart').hide();
     $('#already_installed').show();
 };
