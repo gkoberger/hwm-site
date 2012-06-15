@@ -94,7 +94,7 @@ var installSuccess = function() {
         window.location.href = "http://hulu.com/watch/" + vals[2] + "/#hwm-" + vals[1];
     }
 
-    $('#install').text('Installed!');
+    $('#install').text('Installed!').addClass('disabled');
 };
 
 var installNope = function() {
