@@ -154,7 +154,7 @@ header #kids {
   font-size: 30px;
   font-weight: bold;
   margin: 30px auto auto;
-  padding: 14px 14px 14px 17px;
+  padding: 14px 14px 17px 14px;
   position: relative;
   display: block;
   text-align: center;
@@ -172,7 +172,8 @@ header #kids {
   background-color: #97c53e;
 }
 #restart,
-#already_installed {
+#already_installed,
+#unsupported {
   text-align: center;
   color: #999999;
   margin: 10px;
@@ -180,16 +181,30 @@ header #kids {
   font-size: 0.8em;
   z-index: 1000;
 }
+#restart img,
+#already_installed img,
+#unsupported img {
+  position: relative;
+  top: 5px;
+}
 #restart a,
-#already_installed a {
+#already_installed a,
+#unsupported a {
   color: #cccccc;
   text-decoration: none;
 }
 #restart a:hover,
-#already_installed a:hover {
+#already_installed a:hover,
+#unsupported a:hover {
   text-decoration: underline;
 }
-#already_installed {
+#restart a img,
+#already_installed a img,
+#unsupported a img {
+  opacity: 0.8;
+}
+#already_installed,
+#unsupported {
   display: none;
 }
 #how {
@@ -247,29 +262,6 @@ header #kids {
   padding: 5px;
   background-color: #eee;
   box-shadow: 0 0 5px #000;
-}
-#unsupported {
-  display: none;
-  color: #FFFFFF;
-  position: relative;
-  text-align: center;
-  z-index: 10001;
-  margin-top: 0;
-}
-#unsupported a {
-  color: #fff;
-}
-#unsupported a:hover {
-  opacity: 0.8;
-}
-#unsupported a img {
-  margin-bottom: 3px;
-}
-#unsupported strong {
-  position: relative;
-  top: -12px;
-  margin-left: 5px;
-  font-weight: normal;
 }
 footer {
   background-color: #010b0f;

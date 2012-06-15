@@ -125,23 +125,30 @@ header {
     }
 }
 
-#restart, #already_installed {
+#restart, #already_installed, #unsupported {
     text-align: center;
     color: darken(#fff, 40%);
     margin: 10px;
     position: relative;
     font-size: 0.8em;
     z-index: 1000;
+    img {
+        position: relative;
+        top: 5px;
+    }
     a {
         color: darken(#fff, 20%);
         text-decoration: none;
         &:hover {
             text-decoration: underline;
         }
+        img {
+            opacity: 0.8;
+        }
     }
 }
 
-#already_installed {
+#already_installed, #unsupported {
     display: none;
 }
 
@@ -196,30 +203,6 @@ header {
             background-color: #eee;
             box-shadow: 0 0 5px #000;
         }
-    }
-}
-
-#unsupported {
-    display: none;
-    color: #FFFFFF;
-    position: relative;
-    text-align: center;
-    z-index: 10001;
-    margin-top: 0;
-    a {
-        color: #fff;
-        &:hover {
-            opacity: 0.8;
-        }
-        img {
-            margin-bottom: 3px;
-        }
-    }
-    strong {
-        position: relative;
-        top: -12px;
-        margin-left: 5px;
-        font-weight: normal;
     }
 }
 

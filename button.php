@@ -2,7 +2,7 @@
   <div class="cap" id="restart">No browser restart required.</div>
   <div id="already_installed">Want to install again? <a href="#" id="install_small" class="install">Go for it!</a></div>
   <div id="unsupported">
-    <a href="http://firefox.com" target="_blank"><img src="/img/firefox.png"></a>
-    <a href="http://google.com/chrome" target="_blank"><img src="/img/chrome.png"></a>
-    <strong>Only available for <a href="http://firefox.com" target="_new">Firefox 4+</a> and <a href="http://google.com/chrome" target="_new">Chrome 18+</a></strong>
+    Only available for
+    <strong><a href="http://firefox.com" target="_new"><img src="/img/firefox.png"> Firefox 4+</a></strong> and
+    <strong><a href="http://google.com/chrome" target="_new"><img src="/img/chrome.png"> Chrome 18+</a></strong>
   </div>
