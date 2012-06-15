@@ -284,6 +284,7 @@ footer .container {
 }
 #install-page {
   display: none;
+  text-align: center;
 }
 #install-page h2 {
   color: #ffffff;
