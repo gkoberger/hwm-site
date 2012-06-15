@@ -101,7 +101,7 @@ h1 .hulu {
 h1 .beta {
   font-size: 15px;
   position: absolute;
-  bottom: 80px;
+  bottom: 85px;
   right: 5px;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -341,4 +341,87 @@ footer .container {
 }
 #detecting_hwm .dots span.on {
   background-color: #fff;
+}
+#installed_modal {
+  display: none;
+  width: 684px;
+  background-color: #fff;
+  position: fixed;
+  top: 50px;
+  border-radius: 5px;
+  left: 50%;
+  margin-left: -342px;
+  z-index: 2000;
+  border: 3px solid #7dac22;
+  box-shadow: 0 0 10px #000000;
+  -moz-box-shadow: 0 0 10px #000000;
+  -webkit-box-shadow: 0 0 10px #000000;
+}
+#installed_modal .im_top {
+  background-color: #eee;
+  padding: 2em 0;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+#installed_modal .im_top .hwm-button {
+  color: #7dac22;
+  padding-left: 19px;
+  background-image: url('../imgs-src/person.png');
+  background-repeat: no-repeat;
+  background-position: 0 -16px;
+  height: 16px;
+  display: inline-block;
+  text-shadow: 1px 1px #888;
+}
+#installed_modal .im_top h3 {
+  margin: 0;
+  font-size: 2em;
+  color: #777;
+  font-size: 45px;
+  font-weight: normal;
+}
+#installed_modal .im_top h3 span {
+  font-size: 40px;
+  font-weight: bold;
+}
+#installed_modal .im_top p {
+  margin: 0;
+  font-size: 0.95em;
+  color: #777;
+}
+#installed_modal .im_bottom {
+  padding: 2em;
+  overflow: hidden;
+}
+#installed_modal .im_bottom p {
+  margin: 0;
+  color: #555;
+}
+#installed_modal .im_bottom #im_examples > span {
+  padding: 20px 0 0;
+  display: block;
+  color: #999;
+  font-style: italic;
+  text-align: center;
+}
+#installed_modal .im_bottom .show {
+  display: block;
+  color: #999;
+  float: left;
+  width: 145px;
+  text-align: center;
+  font-size: 0.8em;
+  margin: 20px 10px 0 0;
+  text-color: #777;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+#installed_modal .im_bottom .show:hover {
+  color: #7dac22;
+}
+#installed_modal .im_bottom .show:hover img {
+  opacity: 0.8;
+}
+#installed_modal .im_bottom .show span {
+  display: block;
 }

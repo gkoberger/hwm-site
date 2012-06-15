@@ -42,7 +42,21 @@ var installButton = function() {
 };
 
 var installSuccess = function() {
-    $('#installed_modal').insertBefore($('<div>', {'class': 'im_overlay'})).show();
+    $('#installed_modal').show();
+    var url = 'http://huluwith.me/popular.json?json=?';
+    $.getJSON(url, function(d) {
+        var $parent = $('#im_examples').empty();
+        $.each(d.channel.item, function(i, v) {
+            if(i >= 4) return false;
+            var img_src = $(v.description).find('img').attr('src');
+            var title = v.title.split('-')[0];
+            var $div = $('<a>', {'class': 'show', 'href': v.guid.split('#')[0], 'target': '_new'});
+            $parent.append($div);
+            $div.append($('<img>', {'src': img_src}));
+            $div.append($('<span>', {'text': title}));
+        });
+    });
+
     $('#install').text('Installed!');
 };
 
