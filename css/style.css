@@ -81,7 +81,8 @@ body {
   background-color: #7dac22;
   height: 20px;
 }
-.hulu {
+.hulu,
+.hulu_plain {
   color: #7dac22;
 }
 h1 {

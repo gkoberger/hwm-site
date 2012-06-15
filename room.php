@@ -13,7 +13,7 @@
         multiple computers, so you can chat and watch together. It is currently in <em class="beta">beta</em>, so there may be bugs!</p>
     </div>
     <div id="detecting_hwm" class="detecting">
-      Detecting the <strong><span class="hulu">hulu</span>withme</strong> plugin&hellip;
+      Detecting the <strong><span class="hulu_plain">hulu</span>withme</strong> plugin&hellip;
       <div class="dots">
         <span></span><span></span><span></span><span></span><span></span>
       </div>
