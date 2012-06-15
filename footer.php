@@ -1,9 +1,6 @@
     <script src="/js/lib/jquery.js"></script>
     <script src="/js/script.js"></script>
 
-    <script src="/js/lib/less_setup.js"></script>
-    <script src="/js/lib/less.js"></script>
-
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-32621298-1']);

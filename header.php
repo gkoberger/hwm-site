@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title><?= $title ? $title : "Huluwithme :: Watch your favorite shows with your favorite people" ?></title>
     <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="/css/style.less" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
 
     <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/kadfigclkmmnpchmalpbcfbmpnmmmoag">
 
