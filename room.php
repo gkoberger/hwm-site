@@ -11,7 +11,6 @@
 
       <p>Don't let distance keep you from watching your favorite shows with your favorite people. <strong>Huluwithme</strong> keeps your video in sync across
         multiple computers, so you can chat and watch together. It is currently in <em class="beta">beta</em>, so there may be bugs!</p>
-
     </div>
     <div id="detecting_hwm" class="detecting">
       Detecting the <strong><span class="hulu">hulu</span>withme</strong> plugin&hellip;
