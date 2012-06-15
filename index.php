@@ -45,6 +45,7 @@
     </footer>
 
     <div id="installed_modal">
+        <a href="#" class="close">x</a>
         <div class="im_top">
             <h3><span class="hulu">hulu</span>withme is installed!</h3>
             <p>Head over to Hulu and hit the <span class="hwm-button"><strong>hulu</strong>withme</span> button under any video.</p>

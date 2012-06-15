@@ -1,6 +1,11 @@
 $(function() {
     installButton();
     dots();
+
+    $('#installed_modal .close').click(function(e) {
+        e.preventDefault();
+        $('#installed_modal').hide();
+    });
 });
 
 var installButton = function() {
