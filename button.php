@@ -1,5 +1,5 @@
   <a href="#" id="install">Get Started!</a>
-  <div class="cap">No browser restart required.</div>
+  <div class="cap" id="restart">No browser restart required.</div>
   <div id="unsupported">
     <a href="http://firefox.com" target="_blank"><img src="/img/firefox.png"></a>
     <a href="http://google.com/chrome" target="_blank"><img src="/img/chrome.png"></a>

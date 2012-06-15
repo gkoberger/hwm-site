@@ -1,5 +1,6 @@
 <? $title = "Detecting Huluwithme plugin..."; ?>
 <? include "header.php"; ?>
+    <div id="topbar"></div>
 
     <div id="install-page">
       <h1><strong class="hulu">hulu</strong>withme</h1>
@@ -9,7 +10,7 @@
 
     </div>
     <div id="detecting_hwm" class="detecting">
-      Detecting the <strong><span>hulu</span> with me</strong> plugin&hellip;
+      Detecting the <strong><span class="hulu">hulu</span>withme</strong> plugin&hellip;
       <div class="dots">
         <span></span><span></span><span></span><span></span><span></span>
       </div>

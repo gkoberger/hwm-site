@@ -16,6 +16,7 @@ var installButton = function() {
         };
     } else {
         $('#unsupported').show();
+        $('#restart').hide();
         $('#install').addClass('disabled').click(function() {
             alert('You need to be using either Firefox 4+ or Chrome 18+');
         });
@@ -27,11 +28,12 @@ var dots = function() {
 
     var i = 0;
     function lightUp() {
-        if(i >= spans.length) {
-            i = 0;
+        if(i > spans.length) {
+            i = -1;
             spans.removeClass('on');
         }
-        spans.eq(i).addClass('on');
+        if(i >= 0)
+            spans.eq(i).addClass('on');
         i++;
     }
 

@@ -40,25 +40,30 @@ body {
     height: 20px;
 }
 
+.hulu {
+    color: @hulu;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    color: #FFFFFF;
+    font-size: 100px;
+    margin: 30px 0 0;
+    font-weight: normal;
+    .hulu {
+        font-size: 90px;
+        font-weight: bold;
+        color: @hulu;
+    }
+}
+
 header {
     width: 1020px;
     margin: auto;
     height: 383px;
     position: relative;
-    h1 {
-        position: relative;
-        text-align: center;
-        z-index: 1;
-        color: #FFFFFF;
-        font-size: 100px;
-        margin: 30px 0 0;
-        font-weight: normal;
-        .hulu {
-            font-size: 90px;
-            font-weight: bold;
-            color: @hulu;
-        }
-    }
     #header-content {
         margin: 20px auto auto;
         width: 550px;
@@ -73,33 +78,6 @@ header {
             text-align: center;
             color: #fff;
         }
-        #install {
-            .border-box;
-            .border-radius(5px);
-            .box-shadow(0 -5px 0 rgba(0, 0, 0, 0.2) inset);
-            text-shadow: 2px 2px 0 rgba(0,0,0,0.2);
-            background-color: @hulu;
-            color: #FFFFFF;
-            font-size: 30px;
-            font-weight: bold;
-            margin: 30px auto auto;
-            padding: 20px;
-            position: relative;
-            display: block;
-            text-align: center;
-            text-decoration: none;
-            width: 250px;
-            z-index: 10;
-            &.disabled {
-                background-color: #AAA;
-                &:hover {
-                    background-color: #CCC;
-                }
-            }
-            &:hover {
-                background-color: #97c53e;
-            }
-        }
     }
     #kids {
         background-color: #143947;
@@ -108,6 +86,41 @@ header {
         height: 383px;
         top: 0px;
     }
+}
+
+#install {
+    .border-box;
+    .border-radius(5px);
+    .box-shadow(0 -5px 0 rgba(0, 0, 0, 0.2) inset);
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.2);
+    background-color: @hulu;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 30px auto auto;
+    padding: 20px;
+    position: relative;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 250px;
+    z-index: 10;
+    &.disabled {
+        background-color: #AAA;
+        &:hover {
+            background-color: #CCC;
+        }
+    }
+    &:hover {
+        background-color: #97c53e;
+    }
+}
+
+#restart {
+    text-align: center;
+    color: darken(#fff, 40%);
+    margin: 10px;
+    position: relative;
 }
 
 #how {
@@ -172,6 +185,7 @@ header {
     z-index: 10001;
     margin-top: 1em;
     a {
+        color: #fff;
         &:hover {
             opacity: 0.8;
         }
@@ -206,3 +220,48 @@ footer {
         text-align: center;
     }
 }
+
+#install-page {
+    display: none;
+    p {
+        width: 500px;
+        color: darken(#fff, 20%);
+        text-align: center;
+        margin: 20px auto;
+        line-height: 1.3em;
+    }
+    .beta {
+        font-style: normal;
+        color: red;
+    }
+}
+#detecting_hwm {
+    margin: 60px auto 0pt;
+    width: 300px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: rgba(255,255,255,0.6);
+    text-align: center;
+    .border-radius(5px);
+    strong {
+        color: #fff;
+        font-size: 16px;
+        font-weight: normal;
+        .hulu {
+            font-weight: bold;
+            font-size: 15px;
+        }
+    }
+    .dots span {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background-color: rgba(255,255,255,0.3);
+        margin: 20px 5px 0px;
+        .border-radius(10px);
+        &.on {
+            background-color: #fff;
+        }
+    }
+}
+
