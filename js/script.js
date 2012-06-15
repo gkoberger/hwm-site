@@ -9,12 +9,16 @@ var installButton = function() {
         $('.install').click(function() {
             $(this).addClass('disabled').text('Installing...');
         });
+        $('#restart').hide();
+        $('#already_installed').show();
     } else if (!!(window.chrome && chrome.webstore && chrome.webstore.install) && parseInt(navigator.userAgent.match(/Chrom(e|ium)\/([0-9]+)\./)[2]) >= 18) {
         $('.install').click(function() {
             var url = $('link[rel=chrome-webstore-item]').attr('href');
             chrome.webstore.install(url, installSuccess, installNope);
             $(this).addClass('disabled').text('Installing...');
         });
+        $('#restart').hide();
+        $('#already_installed').show();
     } else {
         $('#unsupported').show();
         $('#restart').hide();
@@ -40,8 +44,6 @@ var installButton = function() {
 var installSuccess = function() {
     alert("it worked!");
     $('#install').text('Installed!');
-    $('#restart').hide();
-    $('#already_installed').show();
 };
 
 var installNope = function() {
