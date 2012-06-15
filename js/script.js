@@ -77,7 +77,7 @@ var installSuccess = function() {
         var url = 'http://huluwith.me/popular.json?json=?';
         $.getJSON(url, function(d) {
             var $parent = $('#im_examples').empty();
-            $.each(d.channel.item, function(i, v) {
+            $.each(shuffle(d.channel.item), function(i, v) {
                 if(i >= 4) return false;
                 var img_src = $(v.description).find('img').attr('src');
                 var title = v.title.split('-')[0];
@@ -101,3 +101,7 @@ var installNope = function() {
     $('#install').removeClass('disabled').text('Install');
 };
 
+var shuffle = function(o){
+    for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+    return o;
+};
