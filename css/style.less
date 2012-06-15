@@ -46,7 +46,7 @@ body {
 
 h1 {
     position: relative;
-    text-align: center;
+    display: inline-block;
     z-index: 1;
     color: #FFFFFF;
     font-size: 100px;
@@ -57,9 +57,17 @@ h1 {
         font-weight: bold;
         color: @hulu;
     }
+    .beta {
+        font-size: 20px;
+        position: absolute;
+        bottom: -3px;
+        right: 5px;
+        color: rgba(255, 255, 255, 0.3);
+    }
 }
 
 header {
+    text-align: center;
     width: 1020px;
     margin: auto;
     height: 383px;
@@ -80,6 +88,7 @@ header {
         }
     }
     #kids {
+        left: 0;
         background-color: #143947;
         .animation(flicker 5s infinite);
         position: absolute;

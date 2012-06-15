@@ -3,7 +3,7 @@
     </div>
     <div id="container">
       <header>
-        <h1><span class="hulu">hulu</span>withme</h1>
+        <h1><span class="hulu">hulu</span>withme<span class="beta">currently in <strong>beta</strong></span></h1>
         <div id="header-content">
           <p class="meta">Don't let distance keep you from watching your favorite shows with your favorite people.
             <strong>Hulu</strong>withme keeps your video in sync across multiple computers, so you can chat and watch together.</p>
