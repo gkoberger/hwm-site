@@ -125,13 +125,20 @@ header {
     }
 }
 
-#restart {
+#restart, #already_installed {
     text-align: center;
     color: darken(#fff, 40%);
     margin: 10px;
     position: relative;
     font-size: 0.8em;
     z-index: 1000;
+    a {
+        color: darken(#fff, 30%);
+    }
+}
+
+#already_installed {
+    display: none;
 }
 
 #how {

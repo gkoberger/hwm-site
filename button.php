@@ -1,5 +1,6 @@
-<a href="#" id="install"><?= $button_text ? $button_text : "Get Started!" ?></a>
+<a href="#" id="install" class="install"><?= $button_text ? $button_text : "Get Started!" ?></a>
   <div class="cap" id="restart">No browser restart required.</div>
+  <div id="already_installed">Want to install again? <a href="#" id="install_small" class="install">Go for it!</a></div>
   <div id="unsupported">
     <a href="http://firefox.com" target="_blank"><img src="/img/firefox.png"></a>
     <a href="http://google.com/chrome" target="_blank"><img src="/img/chrome.png"></a>

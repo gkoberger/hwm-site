@@ -5,15 +5,15 @@ $(function() {
 
 var installButton = function() {
     if($.browser.mozilla && parseInt($.browser.version) >= 4) {
-        $('#install').attr('href', '/hwm.xpi');
-        $('#install').click(function() {
+        $('.install').attr('href', '/hwm.xpi');
+        $('.install').click(function() {
             $(this).addClass('disabled').text('Installing...');
         });
     } else if (!!(window.chrome && chrome.webstore && chrome.webstore.install) && parseInt(navigator.userAgent.match(/Chrom(e|ium)\/([0-9]+)\./)[2]) >= 18) {
-        $('#install')[0].onclick = function() {
+        $('.install').click(function() {
             chrome.webstore.install();
             $(this).addClass('disabled').text('Installing...');
-        };
+        });
     } else {
         $('#unsupported').show();
         $('#restart').hide();
@@ -21,6 +21,19 @@ var installButton = function() {
             alert('You need to be using either Firefox 4+ or Chrome 18+');
         });
     }
+
+    var check_i = 0;
+    var check = setInterval(function() {
+        check_i++;
+        if(check_i > 10) clearInterval(check);
+
+        if($('body').hasClass('is_installed')) {
+            $('#install').addClass('disabled').text('Installed!');
+            $('#already_installed').show();
+            $('#restart').hide();
+            clearInterval(check);
+        }
+    }, 500);
 };
 
 var dots = function() {
