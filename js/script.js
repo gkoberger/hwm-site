@@ -49,24 +49,26 @@ var installNope = function() {
 };
 
 var dots = function() {
-    var spans = $('#detecting_hwm .dots span');
+    if($('#detecting_hwm').length) {
+        var spans = $('#detecting_hwm .dots span');
 
-    var i = 0;
-    function lightUp() {
-        if(i > spans.length) {
-            i = -1;
-            spans.removeClass('on');
+        var i = 0;
+        function lightUp() {
+            if(i > spans.length) {
+                i = -1;
+                spans.removeClass('on');
+            }
+            if(i >= 0)
+                spans.eq(i).addClass('on');
+            i++;
         }
-        if(i >= 0)
-            spans.eq(i).addClass('on');
-        i++;
+
+        setInterval(lightUp, 200);
+
+        setTimeout(function() {
+            $('#install-page').show();
+            $('#detecting_hwm').hide();
+            $('title').text('Install Huluwithme!');
+        }, 1000);
     }
-
-    setInterval(lightUp, 200);
-
-    setTimeout(function() {
-        $('#install-page').show();
-        $('#detecting_hwm').hide();
-        $('title').text('Install Huluwithme!');
-    }, 1000);
 };
