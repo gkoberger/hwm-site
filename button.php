@@ -1,4 +1,4 @@
-  <a href="#" id="install">Get Started!</a>
+<a href="#" id="install"><?= $button_text ? $button_text : "Get Started!" ?></a>
   <div class="cap" id="restart">No browser restart required.</div>
   <div id="unsupported">
     <a href="http://firefox.com" target="_blank"><img src="/img/firefox.png"></a>
