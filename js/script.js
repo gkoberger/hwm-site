@@ -42,7 +42,7 @@ var installButton = function() {
 };
 
 var installSuccess = function() {
-    alert("it worked!");
+    $('#installed_modal').insertBefore($('<div>', {'class': 'im_overlay'})).show();
     $('#install').text('Installed!');
 };
 

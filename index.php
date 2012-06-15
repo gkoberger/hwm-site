@@ -44,4 +44,17 @@
       </div>
     </footer>
 
+    <div id="installed_modal">
+        <div class="im_top">
+            <h3><span class="hulu">hulu</span>withme is installed!</h3>
+            <p>Head over to Hulu and hit the <span class="hwm-button"><strong>hulu</strong>withme</span> button under any video.</p>
+        </div>
+        <div class="im_bottom">
+            <p>Here are a few videos to get you started:</p>
+            <div id="im_examples">
+                <span>Loading...</span>
+            </div>
+        </div>
+    </div>
+
 <?php include "footer.php";?>
