@@ -25,13 +25,12 @@
         <li>
           <img src="img/step2.png">
           <h3 class="meta">2. Share <span>the</span> Link</h3>
-          <p>On every Hulu video, there will be a link to <i><strong>hulu</strong>withme</i>. It will give you a link to send out. Don’t worry, we’ll help them
-            get <strong>hulu</strong>withme installed!</p>
+          <p>On every Hulu video, there will be a button to <i><strong>hulu</strong>withme</i>. It will give you a link to send out. Don’t worry, we’ll help them get <strong>hulu</strong>withme installed!</p>
         </li>
         <li>
           <img src="img/step3.png">
           <h3 class="meta">3. Watch <span>the</span> Show!</h3>
-          <p>Watch together! When you pause, it'll pause for her. When he plays, it plays for you. You can also chat while you watch the show.</p>
+          <p>Watch together! When you pause, it'll pause for him. When she plays, it plays for you. You can also chat while you watch the show.</p>
         </li>
       </ul>
     </section>
