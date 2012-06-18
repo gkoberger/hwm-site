@@ -6,6 +6,8 @@
     <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
 
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
     <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/kadfigclkmmnpchmalpbcfbmpnmmmoag">
 
     <!--[if IE]>
