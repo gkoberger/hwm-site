@@ -6,7 +6,10 @@
     <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
 
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="description" content="Hulu With Me: Watch your favorite shows with your favorite people.">
+    <link rel="image_src" href="http://huluwith.me/imgs-src/promo-small.png">
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
     <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/kadfigclkmmnpchmalpbcfbmpnmmmoag">
 
