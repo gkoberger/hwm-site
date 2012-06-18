@@ -108,6 +108,7 @@ h1 .beta {
 }
 #container {
   background-image: url(../img/kids-bg.png);
+  background-position: 0 -1px;
 }
 header {
   text-align: center;
@@ -395,7 +396,6 @@ footer .container {
   background-position: 0 -16px;
   height: 16px;
   display: inline-block;
-  text-shadow: 1px 1px #888;
 }
 #installed_modal .im_top h3 {
   margin: 0;
