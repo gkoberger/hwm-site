@@ -10,7 +10,7 @@ $(function() {
 
 var installButton = function() {
     if($.browser.mozilla && parseInt($.browser.version) >= 4) {
-        $('.install').attr('href', '/hwm.xpi');
+        $('.install').attr('href', 'https://addons.mozilla.org/firefox/downloads/file/157373/hulu_with_me-8.5-fx.xpi');
         $('.install').click(function() {
             $(this).addClass('disabled').text('Installing...');
             $('#restart').hide();

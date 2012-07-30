@@ -1,5 +1,6 @@
 <?php include "header.php";?>
     <div id="topbar">
+        <!-- Coming soon! Link to Netflixwithme -->
     </div>
     <div id="container">
       <header>
